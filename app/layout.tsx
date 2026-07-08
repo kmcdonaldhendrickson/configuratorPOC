@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hendrickson Portal",
+  title: "Hendrickson APAC POC",
   description: "Hendrickson customer portal",
 };
 
