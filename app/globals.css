@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-maroon: #a30a35;
+  --brand-gray: #e6e6e6;
+  --brand-black: #000000;
+}
+
+body {
+  background-color: var(--brand-gray);
+  color: var(--brand-black);
+}
