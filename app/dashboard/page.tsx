@@ -11,8 +11,12 @@ export default async function DashboardPage() {
     <div className="min-h-screen bg-brand-gray">
       <header className="flex items-center justify-between bg-brand-black px-6 py-4">
         <div className="flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-brand-maroon text-sm font-bold text-white">
-            H
+          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white p-1">
+            <img
+              src="/logo.png"
+              alt="Hendrickson"
+              className="h-full w-full object-contain"
+            />
           </div>
           <span className="text-lg font-bold text-white">Hendrickson</span>
         </div>
