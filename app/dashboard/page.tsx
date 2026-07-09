@@ -14,7 +14,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-brand-gray">
-      <header className="flex items-center justify-between bg-brand-maroon px-6 py-4">
+      <header className="relative z-10 flex items-center justify-between bg-brand-maroon px-6 py-4 shadow-[0_4px_12px_rgba(0,0,0,0.25)]">
         <div className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white p-1">
             <img
