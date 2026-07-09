@@ -47,9 +47,6 @@ export default function LoadingLogo() {
           <path d="M2480 245 l0 -135 30 0 c30 0 30 1 30 55 0 46 3 55 18 55 12 0 27 -19 45 -55 24 -49 30 -55 57 -55 16 0 30 2 30 4 0 2 -10 27 -23 56 l-23 52 28 28 c69 69 5 129 -139 130 l-53 0 0 -135z m145 50 c0 -28 -3 -30 -42 -33 l-43 -3 0 36 0 36 43 -3 c39 -3 42 -5 42 -33z" pathLength={1000} style={{ animationDelay: "1.61s" }} className="wordmark-fill" />
         </g>
       </svg>
-      <p className="animate-pulse text-sm tracking-wide text-white/60">
-        Signing you in&hellip;
-      </p>
     </div>
   );
 }
