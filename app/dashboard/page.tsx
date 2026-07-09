@@ -14,7 +14,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-brand-gray">
-      <header className="flex items-center justify-between bg-brand-black px-6 py-4">
+      <header className="flex items-center justify-between bg-brand-maroon px-6 py-4">
         <div className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white p-1">
             <img
@@ -32,7 +32,7 @@ export default async function DashboardPage() {
       </header>
 
       <main className="p-8">
-        <h1 className="text-2xl font-bold text-brand-maroon">Dashboard</h1>
+        <h1 className="text-2xl font-bold text-black">Dashboard</h1>
         <p className="mt-1 text-black/60">Welcome back, {displayName}</p>
       </main>
     </div>
