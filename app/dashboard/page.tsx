@@ -7,6 +7,11 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const displayName =
+    (user?.user_metadata?.display_name as string | undefined) ||
+    (user?.user_metadata?.full_name as string | undefined) ||
+    user?.email;
+
   return (
     <div className="min-h-screen bg-brand-gray">
       <header className="flex items-center justify-between bg-brand-black px-6 py-4">
@@ -21,14 +26,14 @@ export default async function DashboardPage() {
           <span className="text-lg font-bold text-white">Hendrickson</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-white/70">{user?.email}</span>
+          <span className="text-sm text-white/70">{displayName}</span>
           <SignOutButton />
         </div>
       </header>
 
       <main className="p-8">
         <h1 className="text-2xl font-bold text-brand-maroon">Dashboard</h1>
-        <p className="mt-1 text-black/60">Welcome back, {user?.email}</p>
+        <p className="mt-1 text-black/60">Welcome back, {displayName}</p>
       </main>
     </div>
   );
