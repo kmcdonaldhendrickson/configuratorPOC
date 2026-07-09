@@ -1,4 +1,4 @@
-"use client";
+LOGIN_PAGE = """"use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -116,3 +116,7 @@ export default function LoginPage() {
     </main>
   );
 }
+"""
+with open("app/login/page.tsx", "w") as f:
+    f.write(LOGIN_PAGE)
+print("Wrote app/login/page.tsx")

@@ -1,4 +1,4 @@
-@tailwind base;
+GLOBALS_CSS = """@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -43,3 +43,7 @@ body {
   }
 }
 
+"""
+with open("app/globals.css", "w") as f:
+    f.write(GLOBALS_CSS)
+print("Wrote app/globals.css")
