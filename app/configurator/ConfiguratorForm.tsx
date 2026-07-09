@@ -203,9 +203,12 @@ export default function ConfiguratorForm({
                 value={form.group_type}
                 onChange={(e) => update("group_type", e.target.value)}
               >
-                <option>Tridem Axle</option>
-                <option>Tandem Axle</option>
                 <option>Single Axle</option>
+                <option>Tandem Axle</option>
+                <option>Tridem Axle</option>
+                <option>Quad Axle</option>
+                <option>Five Axle</option>
+                <option>Six Axle</option>
               </select>
             </div>
 
@@ -216,9 +219,8 @@ export default function ConfiguratorForm({
                 value={form.trailer_type}
                 onChange={(e) => update("trailer_type", e.target.value)}
               >
+                <option>Standard</option>
                 <option>Dolly/Dog</option>
-                <option>Semi</option>
-                <option>Full Trailer</option>
               </select>
             </div>
 
@@ -230,9 +232,14 @@ export default function ConfiguratorForm({
                 onChange={(e) => update("body_type", e.target.value)}
               >
                 <option>General Freight</option>
-                <option>Refrigerated</option>
+                <option>Refridgerated</option>
+                <option>Flat Top</option>
+                <option>Drop Deck</option>
                 <option>Tanker</option>
-                <option>Flat Deck</option>
+                <option>Tipper</option>
+                <option>Live Stock</option>
+                <option>Logging</option>
+                <option>Skeletal</option>
               </select>
             </div>
           </div>
