@@ -1,5 +1,4 @@
-import os
-LOADING_LOGO = """"use client";
+"use client";
 
 export default function LoadingLogo() {
   return (
@@ -54,8 +53,3 @@ export default function LoadingLogo() {
     </div>
   );
 }
-""""
-os.makedirs("app/login", exist_ok=True)
-with open("app/login/LoadingLogo.tsx", "w") as f:
-    f.write(LOADING_LOGO)
-print("Wrote app/login/LoadingLogo.tsx")
