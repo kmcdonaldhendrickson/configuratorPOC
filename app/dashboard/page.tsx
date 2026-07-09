@@ -14,7 +14,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-brand-gray">
-      <header className="relative z-10 flex items-center justify-between bg-brand-maroon px-6 py-4 shadow-[0_4px_12px_rgba(0,0,0,0.25)]">
+      <header className="relative z-10 flex items-center justify-between bg-brand-maroon px-6 py-4 shadow-[0_10px_25px_rgba(0,0,0,0.4)]">
         <div className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white p-1">
             <img
@@ -26,7 +26,7 @@ export default async function DashboardPage() {
           <span className="text-lg font-bold text-white">Hendrickson</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-white/70">{displayName}</span>
+          <span className="text-sm text-white">{displayName}</span>
           <SignOutButton />
         </div>
       </header>
