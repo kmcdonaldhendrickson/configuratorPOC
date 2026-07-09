@@ -21,24 +21,36 @@ body {
   stroke-linecap: round;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: draw-stroke 0.7s ease forwards;
+  animation: draw-stroke 1.6s ease infinite;
 }
 
 .wordmark-fill {
   fill: var(--brand-maroon);
   fill-opacity: 0;
   stroke: none;
-  animation: fill-in 0.5s ease forwards;
+  animation: fill-in 1.6s ease infinite;
 }
 
 @keyframes draw-stroke {
-  to {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  45% {
+    stroke-dashoffset: 0;
+  }
+  100% {
     stroke-dashoffset: 0;
   }
 }
 
 @keyframes fill-in {
-  to {
+  0% {
+    fill-opacity: 0;
+  }
+  45% {
+    fill-opacity: 1;
+  }
+  100% {
     fill-opacity: 1;
   }
 }
