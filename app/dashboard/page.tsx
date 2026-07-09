@@ -12,5 +12,10 @@ export default async function DashboardPage() {
     (user?.user_metadata?.full_name as string | undefined) ||
     user?.email;
 
-  return <DashboardShell displayName={displayName} />;
+  const { data: records } = await supabase
+    .from("configurator_records")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  return <DashboardShell displayName={displayName} records={records ?? []} />;
 }
